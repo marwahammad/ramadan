@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+  padding: 0;
+  margin: 0;
+  
+
+}
+.boarding-screen {
+  /* height: 100vh; */
+  /* color: antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.boarding-screen button {
+  background-color: #C9A24D;
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 12px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: transform 0.2s;
+}
+
+.boarding-screen button:hover {
+  transform: scale(1.05);
+}
+
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.dashboard{
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.completed-days {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 8px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .completed-days {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .completed-days {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 400px) {
+  .completed-days {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+.day-chip {
+  background-color: #C9A24D;
+  color: white;
+  padding: 10px 0;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+.day-chip.current {
+  background-color: #ddd;
+  color: #666;
+}
+
+.completion{
+  /* height: 100vh; */
+}
+.boarding-screen,
+.dashboard,
+.completion {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.app-container {
+  /* width: 100%; */
+  min-height: 100vh;
+
+  background-image: url("./assets/images/bg3.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; /* تغطي الشاشة كلها بدون بطء على الموبايل */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  padding: 16px; /* حاشية مناسبة للموبايل */
+}
+
+
+/* لو عايزة تتناسب أكتر مع الشاشات الصغيرة */
+@media (max-width: 600px) {
+  .app-container {
+    background-size: contain; /* تظهر الخلفية كاملة بدون قص */
+    padding: 12px;
+  }
+}
+
+
+
+.screen-card {
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;
+
+  padding: clamp(16px, 4vw, 28px);
+  color: #fff;
+}
+
+
+/* .choose-days {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 12px;
+} */
