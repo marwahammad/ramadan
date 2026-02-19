@@ -74,7 +74,7 @@ export default function MainScreen() {
             style={{
               width: `${progressPercent}%`,
               height: "100%",
-              backgroundColor: "#C9A24D",
+              backgroundColor: "#206381",
               transition: "width 0.5s ease",
             }}
           />
@@ -83,7 +83,7 @@ export default function MainScreen() {
         <button
           onClick={handleCompleteDay}
           style={{
-            backgroundColor: "#C9A24D",
+            backgroundColor: "#206381",
             color: "#fff",
             border: "none",
             padding: "10px 20px",

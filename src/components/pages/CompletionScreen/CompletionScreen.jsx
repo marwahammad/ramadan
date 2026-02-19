@@ -12,13 +12,13 @@ export default function CompletionScreen() {
   };
 
   return (
-    <div className="completion" style={{ textAlign: "center", padding: "50px" }}>
-      <h1>🎉 مبارك! لقد أتممت ختم القرآن! 🎉</h1>
-      <p>نتمنى لك التوفيق في المرات القادمة 🌙</p>
+    <div className="completion" style={{ textAlign:"center", padding: "50px" }}>
+      <h1 style={{color:"#fff"}}>🎉 مبارك! لقد أتممت ختم القرآن! 🎉</h1>
+      <p style={{color:"#fff"}}>🌙نتمنى لك التوفيق في المرات القادمة  </p>
       <button
         onClick={handleRestart}
         style={{
-          backgroundColor: "#C9A24D",
+          backgroundColor: "#206381",
           color: "#fff",
           border: "none",
           padding: "10px 20px",

@@ -13,7 +13,7 @@ export default function BoardingScreen() {
   return (<div className="screen-card">
 
     <div className="boarding-screen">
-      <h1> ختمتي🌙</h1>
+      <h1>  🌙ختمتي</h1>
       <h2>ابدأ رحلتك مع القرآن</h2>
       <div className="choose-days">
         <h3>تختار تختم في القران في كام يوم؟</h3>
